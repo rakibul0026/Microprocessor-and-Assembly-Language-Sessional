@@ -4,20 +4,20 @@
  
  main proc
  
- mov ah,1
+ mov ah,1   ;input function
  int 21h   
  mov bl,al 
  
  
  mov ah,2
  mov dl,10
- int 21h ;
+ int 21h          ; newline  
  mov dl,13
  int 21h 
  
  
  mov ah,2
- mov dl,bl
+ mov dl,bl       ;output 
  int 21h
  
  exit:
