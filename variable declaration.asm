@@ -1,0 +1,38 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+V1 DB 2
+V2 DB ?
+.CODE
+
+MAIN PROC 
+   MOV AX,@DATA
+   MOV DS,AX
+   
+   MOV AH,1
+   INT 21H    ;INPUT
+   MOV V2,AL 
+   
+   MOV AH,2
+   MOV DL,10
+   INT 21H    ;NEWLINE
+   MOV DL,13
+   INT 21H
+   
+   
+   MOV AH,2
+   ADD V1,48
+   MOV DL,V1  ;PRINT V1
+   INT 21H
+   
+   MOV DL,V2   ;PRINT V2
+    INT 21H
+    
+    EXIT:
+    MOV AH,4CH
+    INT 21H
+    MAIN ENDP
+END MAIN
+   
+   
+    
