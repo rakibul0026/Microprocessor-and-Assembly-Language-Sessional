@@ -16,7 +16,7 @@ MAIN PROC
 
 STAT:
     CMP BX, CX
-    JE LAST
+    JE LAST       ;Jump if Equal
     PRINTN "HELLO WORLD"
     INC BX
     JNE STAT      ;Jump if Not Equal
