@@ -19,7 +19,7 @@ STAT:
     JE LAST
     PRINTN "HELLO WORLD"
     INC BX
-    JNE STAT
+    JNE STAT      ;Jump if Not Equal
 
 LAST:
     PRINT "THE PROGRAMMING IS END"
