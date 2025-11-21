@@ -1,0 +1,1 @@
+;factorial in assembly language
