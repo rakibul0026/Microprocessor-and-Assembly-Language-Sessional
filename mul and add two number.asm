@@ -26,7 +26,7 @@ main proc
    
    
    print "Enter 2nd Number:" 
-    mov ah,2
+   
     
    mov ah,1
    int 21h
@@ -48,9 +48,9 @@ main proc
     mov al,a
     
   
-   ;add al,b  ;add two number
+   add al,b  ;add two number
    
-    mul al  ;multipication
+    ;mul al  ;multipication
    
    aam
    mov bx,ax
